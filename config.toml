@@ -1,0 +1,53 @@
+baseURL = "http://litdev.nl/"
+languageCode = "en-us"
+title = "LitDev"
+theme = "beautifulhugo"
+dateFormat = "2006-01-02"
+googleAnalytics = "UA-156515906-1"
+
+summaryLength = 30
+paginate = 5
+
+
+[Params]
+  useHLJS = true
+  homeTitle = "Wessel van Lit"
+  subtitle = "Always looking for that next Byte!"
+  readingtime = true
+  since = 2019
+
+[[Params.bigimg]]
+  src = "image/background.jpg"
+
+[Author]
+  name = "Wessel van Lit"
+  website = "http://litdddev.nl"
+  email = "wessel@litdev.nl"
+  github = "wvanlit"
+  linkedin = "wesselvanlit"
+
+[[menu.main]]
+  name = "Blog"
+  url = "posts"
+
+[[menu.main]]
+  name = "Resume"
+  url = "Resume_Wessel_van_Lit.pdf"
+  weight = 1
+
+[[menu.main]]
+  name = "Programming Languages"
+  url = "language"
+
+[[menu.main]]
+  name = "Projects"
+  url = "project"
+
+[[menu.main]]
+  name = "Apps"
+  url = ""
+
+[[menu.main]]
+  parent = "Apps"
+  name = "Movie Match"
+  url = "movie-match"
