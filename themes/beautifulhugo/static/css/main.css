@@ -10,10 +10,10 @@
   --base05: #d3d0c8;
   --base06: #e8e6df;
   --base07: #f2f0ec;
-  --base08: #f2777a;
+  --base08: #ffcc66; /*99cc99; - Green*/
   --base09: #f99157;
-  --base0a: #ffcc66;
-  --base0b: #99cc99;
+  --base0a: #f2777a; 
+  --base0b: #ffcc66;
   --base0c: #66cccc;
   --base0d: #6699cc;
   --base0e: #cc99cc;
@@ -62,7 +62,7 @@ body {
   position: relative;
   display: flex;
   flex-flow: column;
-  margin: 1% auto 15%;
+  margin: 1% auto 1%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -80,23 +80,25 @@ p + p {
     margin: 24px 0 6px 0;
 }
 p a {
-  color: var(--base08);
+  color: var(--base0b);
 }
 
 h1 {
   font-family: 'Source Code Pro', monospace;
   font-weight: 600;
   color: var(--base07);
+  margin: 5% 0 5% 0;
 }
 
 h2,h3,h4,h5,h6 {
   font-family: 'Source Code Pro', monospace;
   font-weight: 600;
   color: var(--base0a);
+  margin: 2% 0 3% 0;
 }
 
 a {
-  color: var(--base05);
+  color: var(--base0b);
 }
 
 a:hover {
@@ -115,21 +117,20 @@ a.icon {
 }
 
 a.icon i {
-  font-size: 8vw;
-  margin-right:5px;
+  font-size: 5vw;
   margin-right:1vw;
   color: var(--base0a);
 }
 
 @media only screen and (max-width: 768px) {
 a.icon i {
-  font-size: 12vw;
+  font-size: 10vw;
 }
 }
 
 
 blockquote {
-  color: var(--base08);
+  color: var(--base0a);
   font-style: italic;
 }
 
@@ -408,7 +409,7 @@ ul.nav .navbar-nav .navbar-right {
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {
     display: block;
   }
-  .navbar-custom .nav .navlinks-children {
+  .navbar-custom nav .navlinks-children {
     position: absolute;
   }
   .navbar-custom .nav .navlinks-container .navlinks-children a {
@@ -436,12 +437,12 @@ footer {
 
 ul .footer-links {
   font-weight: 900;
-  color: var(--base08);
+  color: var(--base0a);
 }
 
 footer a {
   font-weight: 900;
-  color: var(--base08);
+  color: var(--base0a);
 }
 
 footer .list-inline {
@@ -987,18 +988,22 @@ h4.see-also {
 /* Pygments template by Jan T. Sott (https://github.com/idleberg) */
 
 
+code {
+  background: var(--base02);
+  color: var(--base05);
+}
+
 pre.chroma {
-  background: var(--base00);
-  color: var(--base07);
-  border: 1px solid var(--base07);
+  background: var(--base01);
+  color: var(--base05);
+  border: 3px solid var(--base02);
   font-family: 'Source Code Pro', monospace;
-  font-size: 15px;
-  margin: 15px 0 0 15px;
+  font-size: 16px;
 }
 
 .chroma { color: var(--base05); background-color: var(--base00); } /* Background */
 .chroma .hll { background-color: var(--base00); }
-.chroma .err { color: #960050; } /* Error */
+.chroma .err { color: var(--base08) } /* Error */
 .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; } /* LineTableTD */
 .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; } /* LineTable */
 .chroma .hl { display: block; width: 100%;background-color: var(--base00); } /* LineHighlight */
@@ -1031,3 +1036,9 @@ pre.chroma {
 .chroma .se { color: var(--base09) } /* LiteralStringEscape */
 .chroma .sh { color: var(--base0e) } /* LiteralStringHeredoc */
 .chroma .si { color: var(--base0e) } /* LiteralStringInterpol */
+
+.twitter-tweet-rendered {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}.
